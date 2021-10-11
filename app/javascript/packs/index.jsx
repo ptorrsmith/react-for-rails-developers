@@ -5,23 +5,25 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap.css'
-import PropTypes from 'prop-types'
+import Home from '../components/Home/Home'
 
-const Hello = props => (
-  <div>Hello {props.name}!</div>
-)
+// import PropTypes from 'prop-types'
 
-Hello.defaultProps = {
-  name: 'David'
-}
+// const Hello = props => (
+//   <div>Hello {props.name}!</div>
+// )
 
-Hello.propTypes = {
-  name: PropTypes.string
-}
+// Hello.defaultProps = {
+//   name: 'David'
+// }
+
+// Hello.propTypes = {
+//   name: PropTypes.string
+// }
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <Hello name="React" />,
+    <Home/>,
     document.body.appendChild(document.createElement('div')),
   )
 })
